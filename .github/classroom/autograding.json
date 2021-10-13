@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Task1Test",
+      "setup": "",
+      "run": "node Task1.js",
+      "input": "",
+      "output": "point1.x = 5  point1.y = 6\r\nObject is not well formatted\r\npoint3.a = 10  point3.b = 20",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task2Test",
+      "setup": "",
+      "run": "node Task2.js",
+      "input": "",
+      "output": "[ 50, 20, 30 ]\r\n50 20 30",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
