@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=5961624&assignment_repo_type=AssignmentRepo)
 # Tutorial 4
 Please note that the main objective of the tutorial is for you to practice working with the concepts discussed in the course. You might have more efficient or more clever ways to do the given tasks, and I appreciate that. However, let's use this tutorial to exercise the concepts, and you can demonstrate your competence in the mini-projects.
 
