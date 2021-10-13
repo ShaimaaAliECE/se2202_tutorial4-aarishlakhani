@@ -11,16 +11,24 @@ let parseOneObject = function(jsonFormattedString)
         then return null.
        
     */
+   if(jsonFormattedString[0] != "{" && jsonFormattedString[jsonFormattedString.length-1] != "}")
+   {
+       console.log("Object is not well formatted");
+       return null
+   }
+
    
 
     /*
         Use the string’s slice method to remove the opening and closing curly braces.
     */
-   
+        jsonFormattedString=jsonFormattedString.slice(1,jsonFormattedString.length-1);
 
     /*
         Use the string’s split method to separate the properties separated by commas into an array.
     */
+   jsonFormattedString=jsonFormattedString.split(",");
+   
     
 
     
@@ -32,6 +40,17 @@ let parseOneObject = function(jsonFormattedString)
 
         Add each of the properties and its value to the plain JS object named 'resultRealObject'
      */
+    for(let i=0; i<jsonFormattedString.length; i++){
+
+        jsonFormattedString[i] = jsonFormattedString[i].split(" ");
+        jsonFormattedString[i] = jsonFormattedString[i].join(" ");
+
+        let endingName = jsonFormattedString[i].indexOf(":");
+        let endingTotal = jsonFormattedString[i].length;
+
+        plainJSObject[jsonFormattedString[i].slice(0,endingName)] = jsonFormattedString[i].slice(endingName+1, endingTotal);
+
+    }
     
 
     return plainJSObject;

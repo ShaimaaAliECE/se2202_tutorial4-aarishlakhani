@@ -8,6 +8,20 @@ let findList = function(threshold, ...lists)
      one to loop over all the lists and the one to loop over the elements of each array outer loop to loop over the given lists
     */
    
+     for(let finalarray of lists )
+     {
+         let thresholdnumber =0;
+         for(list of finalarray)
+         {
+             if (list>=threshold)
+             {
+                 thresholdnumber++
+             }
+         }
+         if(thresholdnumber == finalarray.length){
+             return finalarray
+         }
+     }
 };
 
 //Please don't change the lines below
