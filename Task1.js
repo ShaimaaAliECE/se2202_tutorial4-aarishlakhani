@@ -40,10 +40,11 @@ let parseOneObject = function(jsonFormattedString)
 
         Add each of the properties and its value to the plain JS object named 'resultRealObject'
      */
-    for(let i=0; i<jsonFormattedString.length; i++){
+    for(let i=0; i<jsonFormattedString.length; i++)
+    {
 
         jsonFormattedString[i] = jsonFormattedString[i].split(" ");
-        jsonFormattedString[i] = jsonFormattedString[i].join(" ");
+        jsonFormattedString[i] = jsonFormattedString[i].join("");
 
         let endingName = jsonFormattedString[i].indexOf(":");
         let endingTotal = jsonFormattedString[i].length;
